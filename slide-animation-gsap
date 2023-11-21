@@ -1,0 +1,38 @@
+<div class="slider">
+  <div class="slider-wrapper flex">
+    <div class="slide flex">
+      <div class="slide-image slider-link prev">
+        <img src="//cdn.image.st-hatena.com/image/scale/93f4e775998241fc151a8cfa179779c428887d8f/backend=imager;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffobitows%2F20231120%2F20231120235306.jpg">
+        <div class="overlay">
+        </div>
+      </div>
+      <div class="slide-content">
+        <div class="slide-date">21.11.2023.</div>
+        <div class="slide-title">はてなブログ: コードブロックに行番号を振る簡単な方法(jQuery)</div>
+        <div class="slide-text">本記事では、はてなブログでpreタグを使ってコード表記をする際に、行ごとに連番を付ける簡単な方法を紹介します。 jQueryライブラリとCSSスタイリングの組み合わせで、読みやすく整形されたコード表示が可能となります。</div>
+        <div class="slide-more">
+          <a href="//rubirubi.hateblo.jp/entry/assign-line-numbers-to-code-blocks">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide flex">
+      <div class="slide-image slider-link next">
+        <img src="//cdn.image.st-hatena.com/image/scale/42874bc5f1d1494b1d5eaba4d0fec95b9edc9232/backend=imager;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffobitows%2F20231119%2F20231119194317.jpg">
+        <div class="overlay">
+        </div>
+      </div>
+      <div class="slide-content">
+        <div class="slide-date">20.11.2023.</div>
+        <div class="slide-title">はてなブログ: タイトルに背景画像を付けるテクニック(CSS3)</div>
+        <div class="slide-text">この記事では、はてなブログの記事タイトルにCSS3を使用して背景画像を追加するテクニックを紹介します。角度をつけたり、さまざまなフィルターを組み合わせてオリジナルなデザインを実現しましょう。</div>
+        <div class="slide-more">
+          <a href="//rubirubi.hateblo.jp/entry/customize-blog-title-background-image-css3">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arrows">
+    <a href="#" title="Previous" class="arrow slider-link prev"></a>
+    <a href="#" title="Next" class="arrow slider-link next"></a>
+  </div>
+</div>
