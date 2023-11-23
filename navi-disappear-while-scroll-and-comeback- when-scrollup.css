@@ -1,0 +1,239 @@
+/* デスクトップ */
+@media (min-width:768px) {
+
+  .openbtn1 {
+    display: none;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(9, 25, 53, 90%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #g-navi a {
+    color: greenyellow;
+    margin: auto 5px;
+    width: 90px;
+    display: flex;
+    padding: 4px 5px;
+    background: rgb(0, 0, 0, .2);
+    border-left: solid 1px #fff;
+    box-shadow: rgb(255, 255, 255, .5)0 0 10px -5px;
+    border-radius: 7px;
+    font-size: .8em;
+    align-items: center;
+  }
+
+  nav ul#g-navi {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transform: translate(-58px, 8px);
+  }
+
+  #g-navi a {
+    color: greenyellow
+  }
+
+  #g-navi li a:hover {
+    color: #fff
+  }
+
+  ul#g-navi li {
+    margin: 0 5px
+  }
+}  /* デスクトップ ココまで */
+
+
+html {
+  scroll-behavior: smooth  /* スクロールをスムーズに */
+}
+
+#header.UpMove {
+  animation: UpAnime 0.5s forwards
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+#g-navi ul {
+  list-style: none;
+  display: flex
+}
+
+#g-navi ul li a:hover {
+  color: #fff
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center
+}
+
+nav ul li.current a, nav ul li a:hover, nav ul li a:active {
+  color: #fff
+}
+
+
+/* スマホ */
+@media (max-width:768px) {
+
+  .openbtn1.active+#g-navi {
+    display: block
+  }
+
+  .openbtn1 {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: #fecb6e;
+    border-radius: 0 0 0 7px
+  }
+
+  .openbtn1 span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: calc(50% + -13px);
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 26px;
+  }
+
+  .openbtn1 span:nth-of-type(1) {
+    top: calc(31% - 1px)
+  }
+
+  .openbtn1 span:nth-of-type(2) {
+    top: calc(50% - 1px)
+  }
+
+  .openbtn1 span:nth-of-type(3) {
+    top: calc(69% - 1px)
+  }
+
+  .openbtn1.active span:nth-of-type(1) {
+    top: 15px;
+    left: 9px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 60%
+  }
+
+  .openbtn1.active span:nth-of-type(2) {
+    opacity: 0
+  }
+
+  .openbtn1.active span:nth-of-type(3) {
+    top: 27px;
+    left: 9px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 60%
+  }
+
+  .main-navi {
+    position: relative;
+    z-index: 2
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2
+  }
+
+  #g-navi {
+    display: none;
+    padding-top: 50px;
+    font-size: 20px;
+    background: rgb(12, 12, 12, .95);
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgb(0, 0, 0, .3)0 5px 10px 0px;
+    border: solid 1px #fff;
+  }
+
+  #g-navi>li {
+    width: calc(100% / 5);
+  }
+
+  #g-navi>li>a {
+    margin-top: 5px;
+    border-right: solid 1px #fff;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    word-break: break-word;
+    line-height: 1.3em;
+    color: chartreuse;
+    flex-direction: column;
+    padding: 5px 9px;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    padding: 10px;
+    transition: all 0.3s;
+    font-family: 'Marcellus';
+    font-size: 0.6em;
+    text-align: left;
+  }
+
+  #g-navi ul {
+    margin: 50px list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+  }
+
+  #g-navi ul li a {
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    text-decoration: none;
+    display: block
+  }
+}
