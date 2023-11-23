@@ -111,10 +111,6 @@ nav ul li.current a, nav ul li a:hover, nav ul li a:active {
 /* スマホ */
 @media (max-width:768px) {
 
-  .openbtn1.active+#g-navi {
-    display: block
-  }
-
   .openbtn1 {
     position: fixed;
     z-index: 9999;
@@ -125,6 +121,10 @@ nav ul li.current a, nav ul li a:hover, nav ul li a:active {
     height: 44px;
     background: #fecb6e;
     border-radius: 0 0 0 7px
+  }
+
+  .openbtn1.active+#g-navi {
+    display: block
   }
 
   .openbtn1 span {
