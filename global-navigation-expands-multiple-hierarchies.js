@@ -1,24 +1,21 @@
 $(document).ready(function() {
-  var prevDisplayState = 'none'; // 前の状態でのdisplayを記録
+  var prevDisplayState = 'none'; // メニューのdisplay状態を'none'に設定（スマホ用）
 
   $('.openbtn1').click(function() {
     if ($('#g-navi').is(':hidden')) {
-      // '#g-navi' の高さを0からautoに変更
-      $('#g-navi').css('height', 'auto');
-      // '#g-navi' をスライドダウンで表示する
-      $('#g-navi').slideDown();
+    
+      $('#g-navi').css('height', 'auto');  // '#g-navi'の高さを0からautoに変更
+      $('#g-navi').slideDown();  // '#g-navi'をスライドダウンで表示する
       $('#g-navi').css('display', 'block');
       $(this).toggleClass('active');
-      prevDisplayState = 'block';
-    } else {
-      // '#g-navi' が表示されている場合
-      // '#g-navi' をスライドアップで非表示にする（アニメーション付き）
-      $('#g-navi').slideUp('slow');
-      // '.openbtn1' から 'active' クラスを削除する
-      $(".openbtn1").removeClass('active');
-      // スライドアップ時に高さを0に変更
-      $('#g-navi').css('height', 0);
-      prevDisplayState = 'none';
+      prevDisplayState = 'block'; // メニューのdisplay状態を'block'に設定（スマホ用）
+    }
+    else {  // '#g-navi'が表示されている場合
+    
+      $('#g-navi').slideUp('slow');  // '#g-navi'をスライドアップで非表示にする（アニメーション付き）
+      $(".openbtn1").removeClass('active');  // '.openbtn1'から'active'クラスを削除する
+      $('#g-navi').css('height', 0);  // スライドアップ時に高さを0に変更
+      prevDisplayState = 'none'; // メニューのdisplay状態を'none'に設定（スマホ用）
     }
   });
 
@@ -27,8 +24,8 @@ $(document).ready(function() {
   function ScrollAnime() {
     var scroll = $(window).scrollTop();
 
-    if ($(window).width() > 767) {
-      if (scroll == beforePos) {} else if (100 > scroll || 0 > scroll - beforePos) {
+    if ($(window).width() > 767) { // デスクトップ画面の時
+      if (scroll == beforePos) {} else if (100 > scroll || 0 > scroll - beforePos) { // スクロールが100より小さいか、前回のスクロール位置から下向きにスクロールしている場合
         $('#header').removeClass('UpMove');
         $('#header').addClass('DownMove');
       } else {
@@ -81,7 +78,7 @@ $(document).ready(function() {
     }
   }
 
-  // 最初にも一度実行
+  // 初期状態を正しく設定
   mediaQueriesWin();
   applyResponsiveStyles();
 });
