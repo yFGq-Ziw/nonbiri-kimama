@@ -1,21 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-  let e = document.querySelectorAll(".about-tiles"),
-    t = (e, t) => {
-      e.forEach(e => {
-        var a;
-        e.isIntersecting && (a = e.target, document.querySelectorAll(".about-tiles:nth-child(2)").forEach(function(e) {
-          e.classList.add("animate__animated", "animate__slideInLeft")
-        }), document.querySelectorAll(".about-tiles:nth-child(3)").forEach(function(e) {
-          e.classList.add("animate__animated", "animate__fadeInUp", "animate__delay-1s")
-        }), document.querySelectorAll(".about-tiles:nth-child(4)").forEach(function(e) {
-          e.classList.add("animate__animated", "animate__slideInRight")
-        }), t.unobserve(e.target))
-      })
-    },
-    a = new IntersectionObserver(t, {
-      threshold: [0, .5]
+$(document)
+  .ready(function() {
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $(".about-tiles:nth-child(2)")
+            .addClass("animate__animated animate__slideInLeft");
+          $(".about-tiles:nth-child(3)")
+            .addClass("animate__animated animate__fadeInUp animate__delay-1s");
+          $(".about-tiles:nth-child(4)")
+            .addClass("animate__animated animate__slideInRight");
+          if (entry.target.id === "Contact") {
+            $(".top-banner1.hai")
+              .addClass('animate__animated animate__bounceInLeft');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: [0, .5] // Corrected threshold value
     });
-  e.forEach(e => {
-    a.observe(e)
-  })
-});
+    const elements = $("#Contact, .about-tiles");
+    elements.each((index, element) => observer.observe(element));
+  });
