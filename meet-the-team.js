@@ -10,7 +10,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         if ( entry.target.matches( "img.post-thumb.lazy-yard" ) ) {
           entry.target.classList.add( 'animate__animated', 'animate__rubberBand' );
         }
-        // 指定の条件に合致する場合に指定のターゲット要素にクラスを追加
+        // 指定の条件に合致する場合にターゲット要素にAnimate.cssクラスを追加
         if ( entry.target.classList.contains( 'about-tiles' ) ) {
           var targetElements4 = document.querySelectorAll( ".about-tiles:nth-child(2)" );
           targetElements4.forEach( function( element ) {
