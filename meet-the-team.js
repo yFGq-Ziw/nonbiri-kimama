@@ -3,12 +3,14 @@ $(document)
     const observerCallback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          // Meet The Team
           $(".about-tiles:nth-child(2)")
             .addClass("animate__animated animate__slideInLeft");
           $(".about-tiles:nth-child(3)")
             .addClass("animate__animated animate__fadeInUp animate__delay-1s");
           $(".about-tiles:nth-child(4)")
             .addClass("animate__animated animate__slideInRight");
+          // Contact
           if (entry.target.id === "Contact") {
             $(".top-banner1.hai")
               .addClass('animate__animated animate__bounceInLeft');
