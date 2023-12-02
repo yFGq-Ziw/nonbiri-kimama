@@ -1,4 +1,5 @@
 /* 見出しの装飾 */
+
 .entry-content h6 {
     position: relative;
     margin: 100px auto 50px;
@@ -71,7 +72,7 @@ i.fa-solid {
 @media (max-width:500px) {
 
     ul.top-banner1 {
-        flex-direction: column;  /* 要素を縦並びに */
+        flex-direction: column;  /* 要素を縦並び */
     }
 
 }
