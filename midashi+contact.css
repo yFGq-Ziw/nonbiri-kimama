@@ -1,0 +1,76 @@
+/* 見出しの装飾 */
+.entry-content h6 {
+    position: relative;
+    margin: 100px auto 50px;
+    padding: 1.5rem;
+    font-size: 200%;
+    font-family: 'Playfair Display';  /* Google Fonts「Playfair Display」を利用 */
+    text-align: center;
+    font-weight: 400;
+    line-height: auto;
+}
+
+.entry-content h6:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    bottom: 10px;
+    left: calc(50% - 30px);
+    border-radius: 3px;
+    background: #e3acac;
+}
+
+
+/* 以下、Contact */
+ul.top-banner1 {
+    display: flex;
+    justify-content: center;  /* 要素を横方向センター寄せ */
+    align-items: center;  /* 要素を縦方向センター寄せ */
+    margin: 0 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.top-banner1.hai li {
+    background: #bababa;
+}
+
+.top-banner1 li {
+    width: calc(100%/3);
+    max-width: 204px;
+    min-width: 150px;
+    margin: 15px 5px;
+    line-height: 20px;
+    border-radius: 7px;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+/* マウスオーバー時のスタイル */
+.top-banner1 li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .4);
+    opacity: .8;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+i.fa-solid {
+    margin: 0 .1em;
+}
+
+/* 500pxまで */
+@media (max-width:500px) {
+
+    ul.top-banner1 {
+        flex-direction: column;  /* 要素を縦並びに */
+    }
+
+}
