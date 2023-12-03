@@ -63,9 +63,7 @@ figcaption.mceEditable {
   word-break: auto-phrase;
 }
 
-
 /* 550pxまで */
-
 @media (max-width:550px) {
   ul.top-banner2, ul.top-banner3, ul.top-banner4 {
     display: block;
