@@ -63,29 +63,26 @@ figcaption.mceEditable {
     word-break: auto-phrase;
 }
 
+
 /* 550pxまで */
+
 @media (max-width:550px) {
-
-  ul.top-banner2, ul.top-banner3, ul.top-banner4 {
-    display: block;
-    padding: 0px 30px;
-  }
-
-  .top-banner2 li {
-    position: relative;
-    width: calc(100% - 10px);
-    margin: 30px auto;
-    padding-bottom: calc(100%/ 1.454);
-  }
-
-  .top-banner3 li, .top-banner4 li {
-    width: calc(100% - 10px);
-    margin: 30px auto;
-    padding-bottom: calc(100%/ 1.777);
-  }
-
-  figcaption.mceEditable {
-    width: calc(100% - 2em);
-  }
-
+    ul.top-banner2, ul.top-banner3, ul.top-banner4 {
+        display: block;
+        padding: 0px 30px;
+    }
+    .top-banner2 li {
+        position: relative;
+        width: calc(100% - 10px);
+        margin: 30px auto;
+        padding-bottom: calc(100%/ 1.454);
+    }
+    .top-banner3 li, .top-banner4 li {
+        width: calc(100% - 10px);
+        margin: 30px auto;
+        padding-bottom: calc(100%/ 1.777);
+    }
+    figcaption.mceEditable {
+        width: calc(100% - 2em);
+    }
 }
