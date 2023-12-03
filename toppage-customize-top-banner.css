@@ -6,7 +6,7 @@ ul.top-banner2, ul.top-banner3, ul.top-banner4 {
 }
 
 .top-banner2 li {
-  width: calc(100%/2 - 10px);
+  width: calc(100%/ 2 - 10px);
   overflow: hidden;
   position: relative;
   border-radius: 7px;
