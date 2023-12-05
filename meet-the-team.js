@@ -7,7 +7,7 @@ $(document)
           $(".about-tiles:nth-child(2)")
             .addClass("animate__animated animate__slideInLeft");
           $(".about-tiles:nth-child(3)")
-            .addClass("animate__animated animate__fadeInUp animate__delay-1s");
+            .addClass("animate__animated animate__fadeInUp");
           $(".about-tiles:nth-child(4)")
             .addClass("animate__animated animate__slideInRight");
           // Contact
