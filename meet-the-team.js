@@ -4,11 +4,11 @@ $(document)
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // Meet The Team
-          $(".about-tiles:nth-child(2)")
+          $(".about-tiles:nth-child(1)")
             .addClass("animate__animated animate__slideInLeft");
-          $(".about-tiles:nth-child(3)")
+          $(".about-tiles:nth-child(2)")
             .addClass("animate__animated animate__fadeInUp");
-          $(".about-tiles:nth-child(4)")
+          $(".about-tiles:nth-child(3)")
             .addClass("animate__animated animate__slideInRight");
           // Contact
           if (entry.target.id === "Contact") {
