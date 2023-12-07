@@ -1,7 +1,7 @@
 #content-wrapper {
     padding: 20px 0 30px;
     width: 1170px;
-    left: calc(-585px + 50%);
+    left: calc(50% - 585px);
     position: relative;
 }
 
@@ -44,7 +44,7 @@
 @media (max-width:1170px) {
     #content-wrapper {
         width: 100vw;
-        left: calc(-50vw + 50%);
+        left: calc(50% - 50vw);
     }
 }
 
