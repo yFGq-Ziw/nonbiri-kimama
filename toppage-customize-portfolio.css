@@ -23,7 +23,7 @@
 }
 
 .post-grid-item img:hover {
-    filter: blur(0px) brightness(1.1);
+    filter: brightness(1.1);
     scale: 1.1;
 }
 
