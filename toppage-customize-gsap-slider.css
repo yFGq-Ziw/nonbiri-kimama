@@ -80,11 +80,9 @@ div.overlay-blue:hover {
 
 .arrows {
     position: absolute;
-    width: 3.5em;
+    width: 3em;
     bottom: 3em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+    left: calc(50% - 1.5em);
 }
 
 .arrow {
