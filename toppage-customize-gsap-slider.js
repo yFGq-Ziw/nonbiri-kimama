@@ -26,7 +26,7 @@
           .hasClass('prev')) {
           (clickCount > 0) ? clickCount-- : (clickCount = sCount - 1);
         }
-        TweenMax.to(sWrapper, 0.4, {
+        TweenMax.to(sWrapper, .4, {
           x: '-' + (sWidth * clickCount)
         })
         var fromProperties = {
@@ -35,7 +35,7 @@
           y: '-10'
         };
         var toProperties = {
-          autoAlpha: 0.8,
+          autoAlpha: .8,
           x: '0',
           y: '0'
         };
@@ -46,9 +46,9 @@
           autoAlpha: 1,
           y: '0'
         });
-        TweenLite.fromTo(slide_date, 0.4, fromProperties, toProperties);
-        TweenLite.fromTo(slide_title, 0.6, fromProperties, toProperties);
-        TweenLite.fromTo(slide_text, 0.8, fromProperties, toProperties);
+        TweenLite.fromTo(slide_date, .4, fromProperties, toProperties);
+        TweenLite.fromTo(slide_title, .6, fromProperties, toProperties);
+        TweenLite.fromTo(slide_text, .8, fromProperties, toProperties);
         TweenLite.fromTo(slide_more, 1, fromProperties, toProperties);
       });
     });
