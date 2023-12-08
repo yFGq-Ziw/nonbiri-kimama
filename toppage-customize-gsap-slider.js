@@ -1,3 +1,20 @@
+// Intersection Observer
+$(document).ready(function() {
+  const $slider = $('.slider');
+  $slider.each(function(index, slider) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          slider.classList.add('animate__animated', 'animate__zoomInRight');
+          observer.unobserve(slider);
+        }
+      });
+    }, { threshold: [0, .5] });
+    observer.observe(slider);
+  });
+});
+
+// GSAP Slider
 (function($) {
   $(document)
     .ready(function() {
