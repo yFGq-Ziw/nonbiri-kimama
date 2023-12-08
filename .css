@@ -1,0 +1,158 @@
+.slider {
+    position: relative;
+    width: 100vw;
+    left: calc(50% - 50vw);
+    background-color: #000;
+    font-family: 'Roboto';
+}
+
+.slider-wrapper {
+    padding: 3em 0 4em;
+    margin-top: 5vw;
+    margin-left: 11vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.slider-wrapper div {
+    position: relative
+}
+
+.slide-image {
+    width: 12em;
+    height: 12em;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+div.overlay-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 0.5s ease all;
+}
+
+div.overlay-blue:hover {
+    background: rgba(13, 27, 43, .5);
+    cursor: pointer;
+}
+
+.slide-content {
+    width: 25em;
+    padding: 0 3em;
+    color: #fff
+}
+
+.slide-date {
+    color: #0a8acb;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    padding-bottom: 1.4em
+}
+
+.slide-title {
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    line-height: 1.2em;
+    padding-bottom: 1.8em
+}
+
+.slide-text {
+    font-size: .8em;
+    line-height: 1.5em;
+    opacity: .8;
+    padding-bottom: 4em
+}
+
+.slide-more {
+    float: left;
+    font-size: .9em font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.arrows {
+    position: absolute;
+    width: 3.5em;
+    bottom: 3em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.arrow {
+    position: absolute;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: transparent;
+    border-top: .15em solid #fff;
+    border-left: .15em solid #fff;
+    transition: all .1s ease-in-out;
+}
+
+.arrow:hover {
+    border-color: #0A8ACB;
+    border-width: .25vw
+}
+
+.arrow::before {
+    content: '';
+    display: block;
+    width: 200%;
+    height: 200%;
+    margin-top: -50%;
+    margin-left: -50%;
+    transform: rotate(45deg)
+}
+
+.arrow.prev {
+    left: 0;
+    transform: rotate(-45deg)
+}
+
+.arrow.next {
+    right: 0;
+    transform: rotate(135deg)
+}
+
+@media (max-width:768px) {
+    .slider-wrapper {
+        margin-left: unset;
+    }
+}
+
+@media (max-width:600px) {
+    .slider-wrapper.flex {
+        margin-top: 0;
+        margin-left: 0
+    }
+
+    .slide.flex {
+        display: flex;
+        flex-direction: column
+    }
+
+    .slide-image.slider-link {
+        margin-bottom: 2em;
+        margin-left: 3em;
+    }
+
+    .slide-image img {
+        width: 100%;
+        height: 100%
+    }
+}
+
+@media (max-width:450px) {
+    .slide-title, .slide-text {
+        max-width: calc(100% - 80px)
+    }
+}
