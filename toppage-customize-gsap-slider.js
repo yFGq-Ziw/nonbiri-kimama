@@ -28,7 +28,7 @@ $(document).ready(function() {
         slide_title = s.find('.slide-title'),
         slide_text = s.find('.slide-text'),
         slide_more = s.find('.slide-more'),
-        slide_image = s.find('.slide-image img'),
+        slide_image = s.find('.slide-image'),
         sTotalWidth = sCount * sWidth;
       sWrapper.css('width', sTotalWidth);
       sWrapper.css('width', sTotalWidth);
