@@ -77,16 +77,11 @@ p.special-text {
 }
 
 .counter {
-    overflow: hidden;
     margin: 50px auto;
     padding: 40px 0;
     max-width: 1170px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center
 }
 
 .counter-item {
