@@ -108,7 +108,7 @@ p.special-text {
     font-size: .88em;
     text-transform: uppercase;
     letter-spacing: .22em;
-    font-family: Montserrat
+    font-family: 'Montserrat'
 }
 
 @media (max-width:1170px) {
