@@ -63,7 +63,7 @@ p.special-text {
     left: calc(50% - 50vw);
     background: url(背景画像のＵＲＬ);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     background-position: 50% 78%
 }
