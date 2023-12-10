@@ -5,8 +5,7 @@
     position: relative
 }
 
-.skills,
-.skill-details {
+.skills,　.skill-details {
     width: 50%
 }
 
@@ -126,8 +125,7 @@ p.special-text {
         left: unset
     }
 
-    .skills,
-    .skill-details {
+    .skills, .skill-details {
         width: calc(100% - 40px)
     }
 
