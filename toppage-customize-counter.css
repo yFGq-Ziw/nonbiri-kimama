@@ -16,7 +16,10 @@
 
 .skill-details {
     padding: 0 20px;
-    float: right
+}
+
+.skill-details div {
+    display: flex;
 }
 
 .skills dt:after {
@@ -37,10 +40,7 @@
 
 .special-icons {
     font-size: 45px;
-    float: left;
-    margin-right: 10px;
-    width: 50px;
-    height: 60px
+    margin: 10px 10px 0px 0px;
 }
 
 .special-heading {
@@ -61,7 +61,7 @@ p.special-text {
     width: 100vw;
     position: relative;
     left: calc(50% - 50vw);
-    background: url(//dl.dropboxusercontent.com/scl/fi/3c1g5358of706pmw30yht/monitor-and-laptop.avif?rlkey=8rp7ytn1rdper8jwry7s9x3qr), url(//dl.dropboxusercontent.com/scl/fi/47auskvcwx134o0m5o4hc/monitor-and-laptop.webp?rlkey=vl1t2iqbp9dj2ztts89092vok), url(//dl.dropboxusercontent.com/scl/fi/ou270z0k7rwpk3e2rrjxj/monitor-and-laptop.jpg?rlkey=2r16up44v7lrx9qjb3kj7knfq);
+    background: url(背景画像のＵＲＬ);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
