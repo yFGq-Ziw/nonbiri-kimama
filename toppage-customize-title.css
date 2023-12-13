@@ -3,7 +3,7 @@
 }
 
 div.fix-back-image {
-    background: url(//dl.dropboxusercontent.com/scl/fi/tb9x1qs1xp2s73pubrlyv/a-silly-chihuahua.avif?rlkey=f6gv2awlfk0u0xz81qb934ahl), url(//dl.dropboxusercontent.com/scl/fi/fmy2rxid3x19td8ypivxf/a-silly-chihuahua.jpg?rlkey=avwwoeshn4fx946r08s16aulx);
+    background: url(背景画像のＵＲＬ);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ div#blog-title-inner::after {
     bottom: 0;
     height: 100px;
     width: 100%;
-    background: url(//dl.dropboxusercontent.com/scl/fi/reu9x37361yjot5diayzy/header-mask.png?rlkey=4ulnivicss10qlhd6h97kcjaa) no-repeat center;
+    background: url(マスク用画像のＵＲＬ) no-repeat center;
     right: 0;
     background-size: cover;
     z-index: 1;
@@ -63,13 +63,13 @@ div.welcome {
 }
 
 #social {
-    margin: 0px;
+    margin: 0;
     display: inline-flex;
 }
 
 #social li {
     display: inline-block;
-    padding: 0.05em;
+    padding: .05em;
 }
 
 #social a {
