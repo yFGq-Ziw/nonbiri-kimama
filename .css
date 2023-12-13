@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+div.fix-back-image {
+    background: url(//dl.dropboxusercontent.com/scl/fi/tb9x1qs1xp2s73pubrlyv/a-silly-chihuahua.avif?rlkey=f6gv2awlfk0u0xz81qb934ahl), url(//dl.dropboxusercontent.com/scl/fi/fmy2rxid3x19td8ypivxf/a-silly-chihuahua.jpg?rlkey=avwwoeshn4fx946r08s16aulx);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(2px) brightness(.6);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 99%;
+}
+
+div#blog-title-inner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: url(//dl.dropboxusercontent.com/scl/fi/reu9x37361yjot5diayzy/header-mask.png?rlkey=4ulnivicss10qlhd6h97kcjaa) no-repeat center;
+    right: 0;
+    background-size: cover;
+    z-index: 1;
+}
+
+div.welcome {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    line-height: 1.4em;
+    text-transform: Uppercase;
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-family: 'Righteous';
+}
+
+.welcome>p {
+    margin: 0;
+}
+
+.header-logo-desc {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 20px);
+    font-size: .35em;
+    font-family: Montserrat;
+}
+
+.header-logo-desc p {
+    margin: 0 0 0 20px;
+}
+
+.header-logo-desc span {
+    color: #ffbd2f;
+}
+
+#social {
+    margin: 0px;
+    display: inline-flex;
+}
+
+#social li {
+    display: inline-block;
+    padding: 0.05em;
+}
+
+#social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 100%;
+}
+
+#social a:before {
+    font-family: 'font awesome 6 brands';
+    font-weight: 400;
+}
+
+#social .twitter {
+    background: #00aced;
+}
+
+#social .twitter:before {
+    content: "\f099";
+}
+
+#social .instagram {
+    background: #c13584;
+}
+
+#social .instagram:before {
+    content: "\f16d";
+}
+
+#social .youtube {
+    background: #cd201f;
+}
+
+#social .youtube:before {
+    content: "\f167";
+}
+
+#social .facebook {
+    background: #3b5998;
+}
+
+#social .facebook:before {
+    content: "\f09a";
+}
+
+#social .pinterest {
+    background: #bd081c;
+}
+
+#social .pinterest:before {
+    content: "\f0d2";
+}
+
+#social a:hover {
+    color: #ffbd2f;
+}
+
+span.pointer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 1.8em;
+    height: 2.8em;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: .9em;
+}
+
+span.pointer::after {
+    content: '';
+    position: absolute;
+    top: .4em;
+    left: 50%;
+    width: .24em;
+    height: .24em;
+    margin-left: -.12em;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: scroll 1.5s -1s cubic-bezier(.68, -.55, .265, 1.55) infinite;
+}
+
+@keyframes scroll {
+    10% {
+        transform: translateY(0) scaleY(1.2) scaleX(1.2) translateZ(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(20px) scaleY(2.5) scaleX(.5) translateZ(0);
+        opacity: .01;
+    }
+}
+
+header#blog-title {
+    height: 100vh;
+}
+
+h1#title {
+    position: absolute;
+    z-index: 1;
+    top: calc(25% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: .07em;
+    font-family: 'Marcellus';
+    font-weight: 500;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0, .9);
+}
+
+h1#title a {
+    color: #fff;
+}
+
+h1#title>a::after {
+    content: '';
+    width: 50px;
+    height: .3em;
+    display: block;
+    margin: .2em auto;
+    border-radius: 2.5px;
+    background: #a5f430;
+    box-shadow: 0px 1px 2px rgb(24, 41, 67);
+}
+
+h2#blog-description {
+    position: absolute;
+    z-index: 1;
+    top: calc(25% - 15px);
+    left: 50%;
+    transform: translateX(-50%);
+}
