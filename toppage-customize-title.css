@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box }
 
 div.fix-back-image {
     background: url(背景画像のＵＲＬ);
@@ -47,14 +45,13 @@ div.welcome {
 }
 
 .header-logo-desc {
-    display: flex;
-    justify-content: center;
     width: calc(100vw - 20px);
-    font-size: .35em;
+    font-size: .5em;
     font-family: Montserrat;
 }
 
 .header-logo-desc p {
+    display: inline-block;
     margin: 0 0 0 20px;
 }
 
@@ -63,13 +60,13 @@ div.welcome {
 }
 
 #social {
-    margin: 0;
+    margin: 0px;
     display: inline-flex;
 }
 
 #social li {
     display: inline-block;
-    padding: .05em;
+    padding: 0.05em;
 }
 
 #social a {
@@ -205,4 +202,10 @@ h2#blog-description {
     top: calc(25% - 15px);
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 480px) {
+  div.welcome {
+    font-size: 35px;
+  }
 }
