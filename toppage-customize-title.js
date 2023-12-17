@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var typed = new Typed('.header-logo-desc p', {
-    strings: ["テキストが入ります。", "テキストが入ります。"],
+    strings: ["テキスト１", "テキスト２"],
     typeSpeed: 35,
     backSpeed: 35,
     backDelay: 2000,
